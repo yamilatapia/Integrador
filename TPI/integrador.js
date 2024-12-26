@@ -4,6 +4,58 @@ a) Crear un array de objetos llamado libros que contenga al menos 10 libros.*/
 const prompt= require('prompt-sync') ();
 
 const libros = [
+
+    {
+        id:1,
+        titulo:"Cien años de soledad",
+        autor:" juan Lopez",
+        anio: 2024,
+        genero: "Drama",
+        disponible:true
+    
+    },
+    {
+      id:2,
+      titulo:"El principito",
+      autor: "Antoni Saint" ,
+      anio:1943,
+      genero:" Fabula",
+      disponible: false 
+    },
+    {
+        id:3,
+        titulo:"El señor de los anillos",
+        autor:"Sara Parker",
+        anio:2006,
+        genero:"Ficcion",
+        disponible: true,
+    },
+    {
+        id:4,
+        titulo:"fundamentos de enfermeria",
+        autor: "Perez Miguel",
+        anio:1985,
+        genero:"Medicina",
+        disponible: true,
+    
+    },
+    {
+        id:5,
+        titulo:"fundamentos de nutricion",
+        autor: "Garcia lucas",
+        anio: 1998,
+        genero: "Salud",
+        disponibilidad: false,
+    },
+    {
+        id:6,
+        titulo:"Poemas de locura y muerte",
+        autor: "Lorca",
+        anio:1012,
+        genero: "Romance",
+        disponibilidad: true,
+    },
+
     { 
         ID: 100,
         titulo: 'Rebelion en la granja',
@@ -37,13 +89,7 @@ const libros = [
         genero: 'Novela',
         disponible: false
     },
-    /*{ ID: 104, titulo: 'Rebelion en la granja', autor:'George Orwell', anio: 1945, genero: 'novela', disponible: false},
-    { ID: 105, titulo: 'Rebelion en la granja', autor:'George Orwell', anio: 1945, genero: 'novela', disponible: false},
-    { ID: 106, titulo: 'Rebelion en la granja', autor:'George Orwell', anio: 1945, genero: 'novela', disponible: false},
-    { ID: 107, titulo: 'Rebelion en la granja', autor:'George Orwell', anio: 1945, genero: 'novela', disponible: false},
-    { ID: 108, titulo: 'Rebelion en la granja', autor:'George Orwell', anio: 1945, genero: 'novela', disponible: false},
-    { ID: 109, titulo: 'Rebelion en la granja', autor:'George Orwell', anio: 1945, genero: 'novela', disponible: false},
-*/
+
 ]
 
 
