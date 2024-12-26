@@ -1,7 +1,7 @@
 /*1. Estructura de Datos 
 a) Crear un array de objetos llamado libros que contenga al menos 10 libros.*/
 
-const prompt = require('prompt-sync') ();
+const prompt= require('prompt-sync') ();
 
 const libros = [
     { 
@@ -99,9 +99,7 @@ function agregarLibro(ID, titulo, autor, anio, genero,) {
     
 }
 
-
-
-agregarLibro(1,"Bambi", "Bernardita", 1993, "Infantil"); //llamamos a la funcion y le asignamos las nuevas propiedades de ese libro
+agregarLibro(108,"Bambi", "Bernardita", 1993, "Infantil"); //llamamos a la funcion y le asignamos las nuevas propiedades de ese libro
 console.log(libros) //mostramos por consola a libros y pushea el nuevo libro que le pasamos 
 
 /*b) Crear una función buscarLibro(criterio, valor) que permita buscar 
@@ -121,14 +119,14 @@ agregue un nuevo usuario al array usuarios. */
 
     };
     usuarios.push(nuevoUsuario); //agrego el nuevo usuario
-    //return nuevoUsuario; //retorno el nuevo usuario
+    return nuevoUsuario; //retorno el nuevo usuario
 
  }
 
- //console.log(registrarUsuario("Frank", "frank@hotmail.com"));//muestro el nuevo
+ console.log(registrarUsuario("Frank", "frank@hotmail.com"));//muestro el nuevo
 
  registrarUsuario("Frank", "frank@hotmail.com"); //registramos un nuevo usuario
- //console.log(usuarios);// muestro el nuevo array
+ console.log(usuarios);// muestro el nuevo array
 
 
 /*Implementar una función mostrarTodosLosUsuarios() que me devuelva el array completo de usuarios*/
@@ -143,8 +141,11 @@ console.log(mostrarTodosLosUsuarios());
 */
 
 function buscarUsuario(email){
-    for (let i = 0; i < usuarios.length; i++);{
-    return usuarios;
+    for (let i = 0; i < usuarios.length; i++){
+        if(usuarios[i].email === email) {
+            return usuarios[i];
+        }
+
     }
 }
 
